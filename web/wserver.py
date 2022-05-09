@@ -643,14 +643,6 @@ section span{
 </html>
 """
 
-@app.route('/')
-def homepage():
-    return "<h1>See mirror-leech-telegram-bot <a href='https://www.github.com/anasty17/mirror-leech-telegram-bot'>@GitHub</a> By <a href='https://github.com/anasty17'>Anas</a></h1>"
-
-@app.errorhandler(NotFound404Error)
-def page_not_found(e):
-    return "<h1>404: Torrent not found. Mostly wrong hash input</h2>", 404
-
 if __name__ == "__main__":
     app.run()
 
