@@ -84,7 +84,7 @@ def restart(update, context):
     if Interval:
         Interval[0].cancel()
     alive.kill()
-    clean_all()
+    #clean_all()
     srun(["pkill", "-f", "gunicorn|aria2c|qbittorrent-nox|megasdkrest"])
     srun(["python3", "update.py"])
     with open(".restartmsg", "w") as f:
