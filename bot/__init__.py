@@ -73,17 +73,6 @@ try:
 except:
     pass
 
-aria2 = ariaAPI(
-    ariaClient(
-        host="http://localhost",
-        port=6800,
-        secret="",
-    )
-)
-
-def get_client():
-    return qbClient(host="localhost", port=8090)
-
 
 DOWNLOAD_DIR = None
 BOT_TOKEN = None
