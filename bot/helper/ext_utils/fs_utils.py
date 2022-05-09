@@ -9,7 +9,7 @@ from time import time
 from math import ceil
 
 from .exceptions import NotSupportedExtractionArchive
-from bot import aria2, LOGGER, DOWNLOAD_DIR, get_client, TG_SPLIT_SIZE, EQUAL_SPLITS, STORAGE_THRESHOLD
+from bot import LOGGER, DOWNLOAD_DIR, get_client, TG_SPLIT_SIZE, EQUAL_SPLITS, STORAGE_THRESHOLD
 
 VIDEO_SUFFIXES = ("M4V", "MP4", "MOV", "FLV", "WMV", "3GP", "MPG", "WEBM", "MKV", "AVI")
 
@@ -27,14 +27,6 @@ def start_cleanup():
     except:
         pass
     makedirs(DOWNLOAD_DIR)
-
-def clean_all():
-    aria2.remove_all(True)
-    get_client().torrents_delete(torrent_hashes="all")
-    try:
-        rmtree(DOWNLOAD_DIR)
-    except:
-        pass
 
 def exit_clean_up(signal, frame):
     try:
