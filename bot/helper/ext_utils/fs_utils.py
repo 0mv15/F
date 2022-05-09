@@ -9,7 +9,7 @@ from time import time
 from math import ceil
 
 from .exceptions import NotSupportedExtractionArchive
-from bot import LOGGER, DOWNLOAD_DIR, get_client, TG_SPLIT_SIZE, EQUAL_SPLITS, STORAGE_THRESHOLD
+from bot import LOGGER, DOWNLOAD_DIR, TG_SPLIT_SIZE, EQUAL_SPLITS, STORAGE_THRESHOLD
 
 VIDEO_SUFFIXES = ("M4V", "MP4", "MOV", "FLV", "WMV", "3GP", "MPG", "WEBM", "MKV", "AVI")
 
