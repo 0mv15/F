@@ -9,8 +9,14 @@ RUN apt -qq update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
 
-RUN apt-get update && apt-get -y install cmake
-RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix aria2 unzip
+RUN apt-get -y update && DEBIAN_FRONTEND="noninteractive" \
+    apt-get install -y python3 python3-pip aria2 cmake \
+    tzdata p7zip-full p7zip-rar xz-utils curl pv jq ffmpeg \
+    locales git unzip rtmpdump libmagic-dev libcurl4-openssl-dev \
+    libssl-dev libc-ares-dev libsodium-dev libcrypto++-dev \
+    libsqlite3-dev libfreeimage-dev libpq-dev libffi-dev
+
+RUN apt-get install -y software-properties-common mediainfo mkvtoolnix
 RUN add-apt-repository ppa:stebbins/handbrake-releases
 RUN apt -qq install -y python3 python3-pip
 RUN apt -qq install -y handbrake-cli ffmpeg 
