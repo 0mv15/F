@@ -4,7 +4,7 @@ from time import time
 from math import ceil
 from html import escape
 from psutil import virtual_memory, cpu_percent, disk_usage
-from reuests import head as rhead
+from requests import head as rhead
 from urllib.request import urlopen
 from telegram import InlineKeyboardMarkup
 
