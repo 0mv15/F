@@ -15,8 +15,7 @@ def tgupload(update, context):
     if os.path.exists(filename):
         pass
     else:
-        await sendMessage('No such filename.🤔', context.bot, update.message)
-        return
+        return sendMessage('No such filename.🤔', context.bot, update.message)    
     procs = sendMessage('uploading, be sure file size <2gb😅', context.bot, update.message)
     context.bot.send_document(filename=filename, reply_to_message_id=message.message_id, chat_id=message.chat_id)
     editMessage("successfully uploaded 😉", procs)
