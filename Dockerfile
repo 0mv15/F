@@ -11,7 +11,7 @@ ENV TZ=Asia/Kolkata
  
 RUN apt-get -y update
 RUN apt-get install -y python3 python3-pip software-properties-common mediainfo wget \
-    git mkvtoolnix aria2 pv jq libmagic-dev
+    git mkvtoolnix aria2 pv jq libmagic-dev unzip
 RUN add-apt-repository ppa:stebbins/handbrake-releases
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
