@@ -13,7 +13,7 @@ RUN dpkg --add-architecture i386
  
 RUN apt-get -y update
 RUN apt-get install -y python3 python3-pip software-properties-common mediainfo wget \
-    git mkvtoolnix aria2 pv jq libmagic-dev unzip wine64
+    git mkvtoolnix pv jq libmagic-dev unzip wine64
 RUN add-apt-repository ppa:stebbins/handbrake-releases
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
