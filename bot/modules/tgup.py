@@ -19,7 +19,7 @@ def tgupload(update, context):
     
     procs = sendMessage('uploading, be sure file size <2gb😅', context.bot, update.message)
     #context.bot.send_document(document=filename, filename=filename, reply_to_message_id=message.message_id, chat_id=message.chat_id)
-    update.reply_document(document=filename, quote=True)
+    context.bot.reply_document(document=filename, quote=True)
     editMessage("successfully uploaded 😉", procs)
 
 TGUP_HANDLER = CommandHandler(BotCommands.tgupCommand, tgupload,
