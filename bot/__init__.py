@@ -2,7 +2,6 @@ from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig, er
 from socket import setdefaulttimeout
 from faulthandler import enable as faulthandler_enable
 from telegram.ext import Updater as tgUpdater
-from aria2p import API as ariaAPI, Client as ariaClient
 from os import remove as osremove, path as ospath, environ
 from requests import get as rget
 from json import loads as jsnloads
@@ -58,8 +57,7 @@ if not ospath.exists('.netrc'):
     srun(["touch", ".netrc"])
 srun(["cp", ".netrc", "/root/.netrc"])
 srun(["chmod", "600", ".netrc"])
-srun(["chmod", "+x", "aria.sh"])
-srun(["./aria.sh"], shell=True)
+
 
 Interval = []
 DRIVES_NAMES = []
