@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# (c) YashDK [yash-dk@github]
+# (c) MG 
 
 from anytree import NodeMixin
 
@@ -28,16 +28,16 @@ def get_folders(path):
 
 
 def make_tree(res):
-    """This function takes the list of all the torrent files. The files are name hierarchically.
+    """This function takes the list of all the rent files. The files are name hierarchically.
         Felt a need to document to save time.
 
     Args:
-        res (list): Torrent files list.
+        res (list):  files list.
 
     Returns:
         TorNode: Parent node of the tree constructed and can be used further.
     """
-    parent = TorNode("Torrent")
+    parent = TorNode("rent")
     for l, i in enumerate(res):
         # Get the hierarchy of the folders by splitting based on '/'
         folders = get_folders(i.name)
