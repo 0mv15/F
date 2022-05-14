@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# (c) YashDK [yash-dk@github]
-# Redesigned By - @bipuldey19 (https://github.com/SlamDevs/slam-mirrorbot/commit/1e572f4fa3625ecceb953ce6d3e7cf7334a4d542#diff-c3d91f56f4c5d8b5af3d856d15a76bd5f00aa38d712691b91501734940761bdd)
+# (c) bokka le
+# Redesigned By - hehe (https://github.com/SlamDevs/slam-mirrorbot/commit/1e572f4fa3625ecceb953ce6d3e7cf7334a4d542#diff-c3d91f56f4c5d8b5af3d856d15a76bd5f00aa38d712691b91501734940761bdd)
 
 from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig as log_Config
 
@@ -223,7 +223,7 @@ input[type="submit"]:hover, input[type="submit"]:focus{
           alt="logo"
         />
         <a href="https://t.me/anas_tayyar">
-          <h2 class="name">Qbittorrent Selection</h2>
+          <h2 class="name">Selection</h2>
         </a>
       </div>
       <div class="social">
@@ -414,7 +414,7 @@ code_page = """
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Torrent Code Checker</title>
+    <title>Code Checker</title>
     <link rel="icon" href="https://telegra.ph/file/cc06d0c613491080cc174.png" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -615,11 +615,11 @@ section span{
           alt="logo"
         />
         <a href="https://t.me/anas_tayyar">
-          <h2 class="name">Qbittorrent Selection</h2>
+          <h2 class="name">Selection</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://www.github.com/anasty17/mirror-leech-telegram-bot"><i class="fab fa-github"></i></a>
+        <a href="hehehh"><i class="fab fa-github"></i></a>
         <a href="https://t.me/anas_tayyar"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
@@ -630,7 +630,7 @@ section span{
           <input
             type="text"
             name="pin_code"
-            placeholder="Enter the code that you have got from Telegram to access the Torrent"
+            placeholder="Enter the code that you have got from Telegram to access the"
           />
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
