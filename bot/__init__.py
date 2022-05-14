@@ -91,7 +91,7 @@ AUTHORIZED_CHATS = set()
 SUDO_USERS = set()
 AS_DOC_USERS = set()
 AS_MEDIA_USERS = set()
-EXTENTION_FILTER = set(['.torrent'])
+EXTENTION_FILTER = set(['.ent'])
 
 try:
     aid = getConfig('AUTHORIZED_CHATS')
@@ -203,12 +203,10 @@ try:
 except:
     CMD_INDEX = ''
 try:
-    TORRENT_DIRECT_LIMIT = getConfig('TORRENT_DIRECT_LIMIT')
-    if len(TORRENT_DIRECT_LIMIT) == 0:
-        raise KeyError
-    TORRENT_DIRECT_LIMIT = float(TORRENT_DIRECT_LIMIT)
+    NT_DIRECT_LIMIT = getConfig('ENT_DIRECT_LIMIT')
+    ENT_DIRECT_LIMIT = float(ENT_DIRECT_LIMIT)
 except:
-    TORRENT_DIRECT_LIMIT = None
+    NT_DIRECT_LIMIT = None
 try:
     CLONE_LIMIT = getConfig('CLONE_LIMIT')
     if len(CLONE_LIMIT) == 0:
@@ -252,12 +250,12 @@ try:
 except:
     RSS_DELAY = 900
 try:
-    TORRENT_TIMEOUT = getConfig('TORRENT_TIMEOUT')
-    if len(TORRENT_TIMEOUT) == 0:
+    _TIMEOUT = getConfig('_TIMEOUT')
+    if len(_TIMEOUT) == 0:
         raise KeyError
-    TORRENT_TIMEOUT = int(TORRENT_TIMEOUT)
+    _TIMEOUT = int(_TIMEOUT)
 except:
-    TORRENT_TIMEOUT = None
+    _TIMEOUT = None
 try:
     BUTTON_FOUR_NAME = getConfig('BUTTON_FOUR_NAME')
     BUTTON_FOUR_URL = getConfig('BUTTON_FOUR_URL')
@@ -353,10 +351,10 @@ try:
 except:
     EQUAL_SPLITS = False
 try:
-    QB_SEED = getConfig('QB_SEED')
-    QB_SEED = QB_SEED.lower() == 'true'
+    _SEED = getConfig('SEED')
+    _SEED = _SEED.lower() == 'true'
 except:
-    QB_SEED = False
+    _SEED = False
 try:
     CUSTOM_FILENAME = getConfig('CUSTOM_FILENAME')
     if len(CUSTOM_FILENAME) == 0:
