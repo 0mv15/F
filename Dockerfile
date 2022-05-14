@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata 
  
 RUN apt-get update
-RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix aria2 
+RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix aria2 libmagic-dev
 RUN add-apt-repository ppa:stebbins/handbrake-releases
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
