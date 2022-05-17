@@ -8,8 +8,10 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata 
 
 RUN apt -qq update
+
 RUN add-apt-repository ppa:savoury1/ffmpeg5
-RUN add-apt-repository ppa:savoury1/ffmpeg4 
+RUN add-apt-repository ppa:savoury1/ffmpeg4
+
 RUN dpkg --add-architecture i386
 
 RUN apt-get -y update
