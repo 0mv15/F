@@ -17,7 +17,7 @@ RUN add-apt-repository ppa:savoury1/ffmpeg4
 RUN apt -qq install -y python3 python3-pip 
 RUN apt -qq install -y ffmpeg  
  
- RUN git clone https://github.com/axiomatic-systems/Bento4.git
+RUN git clone https://github.com/axiomatic-systems/Bento4.git
 WORKDIR /usr/src/app/Bento4/cmakebuild
 
 RUN apt install -y libprotobuf-dev protobuf-compiler
