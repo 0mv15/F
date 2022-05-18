@@ -1,4 +1,4 @@
-FROM ubuntu:20.04 
+FROM ghcr.io/amirulsdockerhub/ultr01d_ub_docker:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
