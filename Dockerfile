@@ -11,6 +11,8 @@ ENV TZ=Asia/Kolkata
  
 RUN apt-get update
 RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix 
+\
+    git mkvtoolnix pv jq libmagic-dev
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
 RUN apt -qq install -y python3 python3-pip 
