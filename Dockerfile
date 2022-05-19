@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata 
  
 RUN apt-get update
-RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix jq libmagic-dev
+RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix jq libmagic-dev unzip
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
 RUN apt -qq install -y python3 python3-pip 
