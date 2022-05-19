@@ -5,18 +5,16 @@ RUN chmod 777 ./app
 WORKDIR /app 
  
 RUN apt -qq update
-RUN apt full-upgrade 
  
 ENV DEBIAN_FRONTEND=noninteractive 
 ENV TZ=Asia/Kolkata 
  
 RUN apt-get update
-RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix aria2 
-RUN add-apt-repository ppa:stebbins/handbrake-releases
+RUN apt-get install -y software-properties-common mediainfo wget git mkvtoolnix 
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4 
 RUN apt -qq install -y python3 python3-pip 
-RUN apt -qq install -y handbrake-cli ffmpeg  
+RUN apt -qq install -y ffmpeg  
  
 COPY requirements.txt . 
 RUN python3 -m pip install --upgrade pip 
