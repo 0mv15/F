@@ -21,7 +21,6 @@ python-magic
 python-telegram-bot
 requests
 six
-telegraph
 tenacity
 tgCrypto
 urllib3
