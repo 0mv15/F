@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # (c) bokka le
-# Redesigned By - hehe (https://github.com/SlamDevs/slam-mirrorbot/commit/1e572f4fa3625ecceb953ce6d3e7cf7334a4d542#diff-c3d91f56f4c5d8b5af3d856d15a76bd5f00aa38d712691b91501734940761bdd)
+# Redesigned By - hehe 
 
 from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig as log_Config
 
