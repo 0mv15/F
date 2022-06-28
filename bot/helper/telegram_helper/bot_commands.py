@@ -5,12 +5,11 @@ class _BotCommands:
     def __init__(self):
         self.StartCommand = f'start{CMD_INDEX}'
         self.MirrorCommand = f'mirror{CMD_INDEX}'
-        self.UnzipMirrorCommand = f'unzipmirror{CMD_INDEX}'
-        self.ZipMirrorCommand = f'zipmirror{CMD_INDEX}'
-        self.CancelMirror = f'cancel{CMD_INDEX}'
-        self.CancelAllCommand = f'cancelall{CMD_INDEX}'
         self.ListCommand = f'list{CMD_INDEX}'
-        self.StatusCommand = f'status{CMD_INDEX}'
+        self.EvalCommand = 'eval'
+        self.ExecCommand = 'exec'
+        self.ClearLocalsCommand = 'clearlocals'
+        self.ExecHelpCommand = 'exechelp'   
         self.AuthorizedUsersCommand = f'users{CMD_INDEX}'
         self.AuthorizeCommand = f'authorize{CMD_INDEX}'
         self.UnAuthorizeCommand = f'unauthorize{CMD_INDEX}'
@@ -26,9 +25,6 @@ class _BotCommands:
         self.WatchCommand = f'watch{CMD_INDEX}'
         self.DeleteCommand = f'del{CMD_INDEX}'
         self.ShellCommand = f's{CMD_INDEX}'
-        self.ExecHelpCommand = f'exechelp{CMD_INDEX}'
-        self.LeechSetCommand = f'leechset{CMD_INDEX}'
-        self.SetThumbCommand = f'setthumb{CMD_INDEX}'
-    
+ 
 
 BotCommands = _BotCommands()
