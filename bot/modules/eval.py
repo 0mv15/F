@@ -103,8 +103,7 @@ def clear(update, context):
         del namespaces[update.message.chat_id]
     send("Cleared locals", bot, update)
 
-def exechelp(update, context):
-   
+
 eval_handler = CommandHandler(BotCommands.EvalCommand, evaluate,
                                 filters=CustomFilters.owner_filter | CustomFilters.authorized_chat, run_async=True)
 exec_handler = CommandHandler(BotCommands.ExecCommand, execute,
