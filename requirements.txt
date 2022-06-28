@@ -25,3 +25,4 @@ telegraph
 tenacity
 tgCrypto
 urllib3
+heroku3
