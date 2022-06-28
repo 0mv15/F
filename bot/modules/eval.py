@@ -110,7 +110,6 @@ def exechelp(update, context):
 • /{BotCommands.ExecCommand}: Run commands in Exec
 • /{BotCommands.ClearLocalsCommand}: Clear locals
 '''
-    sendMessage(help_string, context.bot, update.message)
 
 eval_handler = CommandHandler(BotCommands.EvalCommand, evaluate,
                                 filters=CustomFilters.owner_filter | CustomFilters.authorized_chat, run_async=True)
