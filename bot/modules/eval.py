@@ -104,13 +104,7 @@ def clear(update, context):
     send("Cleared locals", bot, update)
 
 def exechelp(update, context):
-    help_string = f'''
-<u><b>Executor</b></u>
-• /{BotCommands.EvalCommand}: Run code in Python
-• /{BotCommands.ExecCommand}: Run commands in Exec
-• /{BotCommands.ClearLocalsCommand}: Clear locals
-'''
-
+   
 eval_handler = CommandHandler(BotCommands.EvalCommand, evaluate,
                                 filters=CustomFilters.owner_filter | CustomFilters.authorized_chat, run_async=True)
 exec_handler = CommandHandler(BotCommands.ExecCommand, execute,
