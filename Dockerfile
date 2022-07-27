@@ -17,6 +17,7 @@ RUN apt-get install -y python3 python3-pip software-properties-common wget \
 RUN add-apt-repository ppa:savoury1/ffmpeg5
 RUN add-apt-repository ppa:savoury1/ffmpeg4
 RUN apt -qq install -y ffmpeg  
+RUN mv /usr/bin/ffmpeg /usr/bin/mmpeg
 
 COPY requirements.txt . 
 RUN python3 -m pip install --upgrade pip 
