@@ -24,7 +24,7 @@ class _BotCommands:
         self.CountCommand = f'count{CMD_INDEX}'
         self.WatchCommand = f'watch{CMD_INDEX}'
         self.DeleteCommand = f'del{CMD_INDEX}'
-        self.ShellCommand = f's{CMD_INDEX}'
+        self.ShellCommand = f'sh{CMD_INDEX}'
  
 
 BotCommands = _BotCommands()
