@@ -1,4 +1,4 @@
-FROM ubuntu:22.04 
+FROM anasty17/mltb:latest
  
 WORKDIR /usr/src/app
 SHELL ["/bin/bash", "-c"]
