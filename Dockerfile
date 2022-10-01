@@ -13,11 +13,7 @@ RUN dpkg --add-architecture i386
 
 RUN apt-get -y update
 RUN apt-get install -y python3 python3-pip software-properties-common wget \
-    git pv jq libmagic-dev unzip wine64 wine32 
-RUN add-apt-repository ppa:savoury1/ffmpeg5
-RUN add-apt-repository ppa:savoury1/ffmpeg4
-RUN apt -qq install -y ffmpeg  
-RUN mv /usr/bin/ffmpeg /usr/bin/mmpeg
+    git pv jq libmagic-dev unzip wine64 wine32 mediainfo mkvtoolnix
 
 COPY requirements.txt . 
 RUN python3 -m pip install --upgrade pip 
