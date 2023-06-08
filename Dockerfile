@@ -1,11 +1,5 @@
 FROM dawn001/z_mirror:heroku 
 
-WORKDIR /usr/src/app
-SHELL ["/bin/bash", "-c"]
-RUN chmod 777 /usr/src/app
- 
-ENV DEBIAN_FRONTEND=noninteractive 
-ENV TZ=Asia/Kolkata 
 
 RUN apt -qq update
 
