@@ -1,5 +1,5 @@
-FROM anasty17/mltb:latest
- 
+FROM dawn001/z_mirror:heroku 
+
 WORKDIR /usr/src/app
 SHELL ["/bin/bash", "-c"]
 RUN chmod 777 /usr/src/app
