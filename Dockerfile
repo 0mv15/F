@@ -10,8 +10,7 @@ RUN apt-get install -y python3 python3-pip software-properties-common wget \
     git pv jq libmagic-dev unzip wine64 wine32 mkvtoolnix
 
 COPY requirements.txt . 
-RUN python3 -m pip install --upgrade pip 
-RUN python3 -m pip install --upgrade Pillow 
+ 
 RUN pip3 install --no-cache-dir -r requirements.txt 
  
 COPY . . 
